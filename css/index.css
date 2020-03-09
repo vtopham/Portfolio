@@ -132,6 +132,7 @@ table {
 }
 h1 {
   font-family: 'Merriweather', serif;
+  color: #333333;
 }
 p {
   font-family: 'Martel', serif;
@@ -164,6 +165,11 @@ header .heading {
   max-width: 800px;
   width: 100%;
 }
+@media (max-width: 800px) {
+  header .heading {
+    width: 95%;
+  }
+}
 header .heading h1 {
   font-size: 3.2rem;
   margin: 2% 0%;
@@ -180,6 +186,11 @@ header nav .links {
   justify-content: left;
   margin: 0.5% 0;
 }
+@media (max-width: 800px) {
+  header nav .links {
+    width: 95%;
+  }
+}
 header nav .links .dont-ask {
   width: 50%;
 }
@@ -189,6 +200,11 @@ header nav .links .dont-ask a {
 .content {
   margin: 0 auto;
   max-width: 800px;
+}
+@media (max-width: 800px) {
+  .content {
+    width: 95%;
+  }
 }
 section {
   margin: 4% 0;
@@ -208,13 +224,14 @@ section .body-text a {
   display: flex;
   border-radius: 5px;
   border: 1px solid gray;
+  margin: 1% 0;
 }
 .project-entry * {
   margin-right: 2%;
 }
 .project-entry .proj-1 {
-  width: 40%;
-  border-right: 1px solid gray;
+  width: 30%;
+  border-right: 1px dashed gray;
   display: flex;
   align-items: center;
   padding: 2%;
@@ -224,5 +241,10 @@ section .body-text a {
   padding-right: 2%;
 }
 .project-entry .proj-2 {
+  width: 70%;
   padding: 2%;
+  padding-left: 0%;
+}
+.project-entry .proj-2 a {
+  font-size: 0.8rem;
 }
