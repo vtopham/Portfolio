@@ -3,7 +3,21 @@
     max-width: 100%;
 }
 
-article {
-    max-width: @content-width;
-    background-color: red;
+h1, p {
+    font-family: @serif;
+    color: @charcoal;
+}
+
+h2, h3, h4, h5, h6, a {
+    font-family: @sansSerif;
+    color: @charcoal;
+}
+
+a {
+    text-decoration: none;
+    color: @linkGray;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
