@@ -130,7 +130,75 @@ table {
   box-sizing: border-box;
   max-width: 100%;
 }
-article {
+h1,
+p {
+  font-family: 'Merriweather', serif;
+  color: #333333;
+}
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: 'Didact Gothic', sans-serif;
+  color: #333333;
+}
+a {
+  text-decoration: none;
+  color: #666666;
+}
+a:hover {
+  text-decoration: underline;
+}
+header {
+  margin-top: 2%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .heading {
   max-width: 800px;
-  background-color: red;
+  width: 100%;
+}
+header .heading h1 {
+  font-size: 3.2rem;
+  margin: 2% 0%;
+}
+header nav {
+  background-color: peachpuff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header nav .links {
+  width: 800px;
+  display: flex;
+  justify-content: left;
+  margin: 0.5% 0;
+}
+header nav .links .dont-ask {
+  width: 50%;
+}
+header nav .links .dont-ask a {
+  padding-right: 10%;
+}
+.content {
+  margin: 0 auto;
+  max-width: 800px;
+}
+section {
+  margin: 2% 0;
+}
+section h2 {
+  font-size: 1.6rem;
+}
+section .body-text {
+  padding: 1% 0;
+}
+section .body-text p,
+section .body-text a {
+  padding: 1% 0;
+  line-height: 1.5rem;
 }
