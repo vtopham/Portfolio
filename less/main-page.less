@@ -8,13 +8,13 @@ header {
     align-items: center;
 
     .heading {
-        max-width: @contentWidth;
-        width: 100%;
 
-        @media @tablet {
-            width: 95%;
+        width: 95%;
+       
+        @media @desktop {
+            max-width: @contentWidth;
+            width: 100%;
         }
-
 
         h1 {
             font-size: 3.2rem;
@@ -28,21 +28,32 @@ header {
         justify-content: center;
         
         .links {
-            width: @contentWidth;
+            
+            width: 100%;
+
             @media @tablet {
                 width: 95%;
             }
 
+            @media @desktop {
+                width: @contentWidth;
+            }
+
             display: flex;
-            justify-content: left;
+
+            @media @tablet {
+                justify-content: left;
+            }
             margin: .5% 0;
 
             .dont-ask {
-                width: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
 
-                // @media @tablet {
-                //     width: 95%;
-                // }
+                @media @tablet {
+                    width: 50%;
+                }
                 
                 a {
                     padding-right: 10%;
@@ -55,9 +66,12 @@ header {
 
 .content {
     margin: 0 auto;
-    max-width: @contentWidth;  
-    @media @tablet {
-        width: 95%;
+     
+    width: 95%;
+   
+
+    @media @desktop {
+        max-width: @contentWidth; 
     }
 }
 

@@ -162,12 +162,12 @@ header {
   align-items: center;
 }
 header .heading {
-  max-width: 800px;
-  width: 100%;
+  width: 95%;
 }
-@media (max-width: 800px) {
+@media (min-width: 1000px) {
   header .heading {
-    width: 95%;
+    max-width: 800px;
+    width: 100%;
   }
 }
 header .heading h1 {
@@ -181,29 +181,45 @@ header nav {
   justify-content: center;
 }
 header nav .links {
-  width: 800px;
+  width: 100%;
   display: flex;
-  justify-content: left;
   margin: 0.5% 0;
 }
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   header nav .links {
     width: 95%;
   }
 }
+@media (min-width: 1000px) {
+  header nav .links {
+    width: 800px;
+  }
+}
+@media (min-width: 800px) {
+  header nav .links {
+    justify-content: left;
+  }
+}
 header nav .links .dont-ask {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 800px) {
+  header nav .links .dont-ask {
+    width: 50%;
+  }
 }
 header nav .links .dont-ask a {
   padding-right: 10%;
 }
 .content {
   margin: 0 auto;
-  max-width: 800px;
+  width: 95%;
 }
-@media (max-width: 800px) {
+@media (min-width: 1000px) {
   .content {
-    width: 95%;
+    max-width: 800px;
   }
 }
 section {
