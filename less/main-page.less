@@ -95,17 +95,33 @@ section {
 
 .project-entry {
     display: flex;
+
+    flex-direction: column;
+
+    @media @tablet {
+        flex-direction: row;
+    }
+
+    
+
     border-radius: 5px;
     border: 1px solid gray;
     margin: 1% 0;
 
     * {
-        margin-right: 2%;
+        margin-right: 2%; //need to fix this
     }
     
     .proj-1 {
-        width: 30%;
-        border-right: 1px dashed gray;
+        
+        
+        width: 100%;
+        border-bottom: 1px dashed gray;
+        @media @tablet {
+            width: 30%;
+            border-right: 1px dashed gray;
+        }
+        
         display: flex;
         align-items: center;
         padding: 2%;
@@ -117,9 +133,14 @@ section {
     }
 
     .proj-2 {
-        width: 70%;
+        
         padding: 2%;
-        padding-left: 0%;
+        
+        
+        @media @tablet {
+            width: 70%;
+            padding-left: 0%;
+        }
         a {
             font-size: .8rem;
         }

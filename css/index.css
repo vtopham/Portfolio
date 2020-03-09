@@ -238,28 +238,44 @@ section .body-text a {
 }
 .project-entry {
   display: flex;
+  flex-direction: column;
   border-radius: 5px;
   border: 1px solid gray;
   margin: 1% 0;
+}
+@media (min-width: 800px) {
+  .project-entry {
+    flex-direction: row;
+  }
 }
 .project-entry * {
   margin-right: 2%;
 }
 .project-entry .proj-1 {
-  width: 30%;
-  border-right: 1px dashed gray;
+  width: 100%;
+  border-bottom: 1px dashed gray;
   display: flex;
   align-items: center;
   padding: 2%;
+}
+@media (min-width: 800px) {
+  .project-entry .proj-1 {
+    width: 30%;
+    border-right: 1px dashed gray;
+  }
 }
 .project-entry .proj-1 .emoji {
   font-size: 2rem;
   padding-right: 2%;
 }
 .project-entry .proj-2 {
-  width: 70%;
   padding: 2%;
-  padding-left: 0%;
+}
+@media (min-width: 800px) {
+  .project-entry .proj-2 {
+    width: 70%;
+    padding-left: 0%;
+  }
 }
 .project-entry .proj-2 a {
   font-size: 0.8rem;
