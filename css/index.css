@@ -130,9 +130,11 @@ table {
   box-sizing: border-box;
   max-width: 100%;
 }
-h1,
-p {
+h1 {
   font-family: 'Merriweather', serif;
+}
+p {
+  font-family: 'Martel', serif;
   color: #333333;
 }
 h2,
@@ -141,7 +143,7 @@ h4,
 h5,
 h6,
 a {
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #333333;
 }
 a {
