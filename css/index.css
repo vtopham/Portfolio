@@ -189,7 +189,7 @@ header nav .links .dont-ask a {
   max-width: 800px;
 }
 section {
-  margin: 2% 0;
+  margin: 4% 0;
 }
 section h2 {
   font-size: 1.6rem;
@@ -201,4 +201,26 @@ section .body-text p,
 section .body-text a {
   padding: 1% 0;
   line-height: 1.5rem;
+}
+.project-entry {
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.project-entry * {
+  margin-right: 2%;
+}
+.project-entry .proj-1 {
+  width: 40%;
+  border-right: 1px solid gray;
+  display: flex;
+  align-items: center;
+  padding: 2%;
+}
+.project-entry .proj-1 .emoji {
+  font-size: 2rem;
+  padding-right: 2%;
+}
+.project-entry .proj-2 {
+  padding: 2%;
 }
