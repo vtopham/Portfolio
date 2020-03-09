@@ -6,9 +6,15 @@ header {
     display: flex;
     flex-direction:column;
     align-items: center;
+
     .heading {
-        max-width: @contentWidth;
-        width: 100%;
+
+        width: 95%;
+       
+        @media @desktop {
+            max-width: @contentWidth;
+            width: 100%;
+        }
 
         h1 {
             font-size: 3.2rem;
@@ -20,13 +26,34 @@ header {
         width: 100%;
         display: flex;
         justify-content: center;
+        
         .links {
-            width: @contentWidth;
+            
+            width: 100%;
+
+            @media @tablet {
+                width: 95%;
+            }
+
+            @media @desktop {
+                width: @contentWidth;
+            }
+
             display: flex;
-            justify-content: left;
+
+            @media @tablet {
+                justify-content: left;
+            }
             margin: .5% 0;
+
             .dont-ask {
-                width: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+
+                @media @tablet {
+                    width: 50%;
+                }
                 
                 a {
                     padding-right: 10%;
@@ -39,11 +66,17 @@ header {
 
 .content {
     margin: 0 auto;
-    max-width: @contentWidth;  
+     
+    width: 95%;
+   
+
+    @media @desktop {
+        max-width: @contentWidth; 
+    }
 }
 
 section {
-    margin: 2% 0;
+    margin: 4% 0;
     h2 {
         font-size: 1.6rem;
 
@@ -58,4 +91,61 @@ section {
         
     }
     
+}
+
+.project-entry {
+    display: flex;
+
+    flex-direction: column;
+
+    @media @tablet {
+        flex-direction: row;
+    }
+
+    
+
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 1% 0;
+
+    * {
+        margin-right: 2%; //need to fix this
+    }
+    
+    .proj-1 {
+        
+        
+        width: 100%;
+        border-bottom: 1px dashed gray;
+        @media @tablet {
+            width: 30%;
+            border-right: 1px dashed gray;
+        }
+        
+        display: flex;
+        align-items: center;
+        padding: 2%;
+
+        .emoji {
+            font-size: 2rem;
+            padding-right: 2%
+        }
+    }
+
+    .proj-2 {
+        
+        padding: 2%;
+        
+        
+        @media @tablet {
+            width: 70%;
+            padding-left: 0%;
+        }
+        a {
+            font-size: .8rem;
+        }
+    }
+
+
+
 }

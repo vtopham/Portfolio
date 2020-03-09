@@ -130,9 +130,12 @@ table {
   box-sizing: border-box;
   max-width: 100%;
 }
-h1,
-p {
+h1 {
   font-family: 'Merriweather', serif;
+  color: #333333;
+}
+p {
+  font-family: 'Martel', serif;
   color: #333333;
 }
 h2,
@@ -141,7 +144,7 @@ h4,
 h5,
 h6,
 a {
-  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #333333;
 }
 a {
@@ -159,8 +162,13 @@ header {
   align-items: center;
 }
 header .heading {
-  max-width: 800px;
-  width: 100%;
+  width: 95%;
+}
+@media (min-width: 1000px) {
+  header .heading {
+    max-width: 800px;
+    width: 100%;
+  }
 }
 header .heading h1 {
   font-size: 3.2rem;
@@ -173,23 +181,49 @@ header nav {
   justify-content: center;
 }
 header nav .links {
-  width: 800px;
+  width: 100%;
   display: flex;
-  justify-content: left;
   margin: 0.5% 0;
 }
+@media (min-width: 800px) {
+  header nav .links {
+    width: 95%;
+  }
+}
+@media (min-width: 1000px) {
+  header nav .links {
+    width: 800px;
+  }
+}
+@media (min-width: 800px) {
+  header nav .links {
+    justify-content: left;
+  }
+}
 header nav .links .dont-ask {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 800px) {
+  header nav .links .dont-ask {
+    width: 50%;
+  }
 }
 header nav .links .dont-ask a {
   padding-right: 10%;
 }
 .content {
   margin: 0 auto;
-  max-width: 800px;
+  width: 95%;
+}
+@media (min-width: 1000px) {
+  .content {
+    max-width: 800px;
+  }
 }
 section {
-  margin: 2% 0;
+  margin: 4% 0;
 }
 section h2 {
   font-size: 1.6rem;
@@ -201,4 +235,48 @@ section .body-text p,
 section .body-text a {
   padding: 1% 0;
   line-height: 1.5rem;
+}
+.project-entry {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin: 1% 0;
+}
+@media (min-width: 800px) {
+  .project-entry {
+    flex-direction: row;
+  }
+}
+.project-entry * {
+  margin-right: 2%;
+}
+.project-entry .proj-1 {
+  width: 100%;
+  border-bottom: 1px dashed gray;
+  display: flex;
+  align-items: center;
+  padding: 2%;
+}
+@media (min-width: 800px) {
+  .project-entry .proj-1 {
+    width: 30%;
+    border-right: 1px dashed gray;
+  }
+}
+.project-entry .proj-1 .emoji {
+  font-size: 2rem;
+  padding-right: 2%;
+}
+.project-entry .proj-2 {
+  padding: 2%;
+}
+@media (min-width: 800px) {
+  .project-entry .proj-2 {
+    width: 70%;
+    padding-left: 0%;
+  }
+}
+.project-entry .proj-2 a {
+  font-size: 0.8rem;
 }
