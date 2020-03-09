@@ -212,6 +212,7 @@ header nav .links .dont-ask {
 }
 header nav .links .dont-ask a {
   padding-right: 10%;
+  white-space: nowrap;
 }
 .content {
   margin: 0 auto;
@@ -262,6 +263,7 @@ section .body-text a {
   .project-entry .proj-1 {
     width: 30%;
     border-right: 1px dashed gray;
+    border-bottom: none;
   }
 }
 .project-entry .proj-1 .emoji {
