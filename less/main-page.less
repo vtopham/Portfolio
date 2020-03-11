@@ -28,7 +28,6 @@ header {
         justify-content: center;
         
         .links {
-            
             width: 100%;
 
             @media @tablet {
@@ -41,9 +40,9 @@ header {
 
             display: flex;
 
-            @media @tablet {
-                justify-content: left;
-            }
+            // @media @tablet {
+            //     justify-content: left;
+            // }
             margin: .5% 0;
 
             .dont-ask {
@@ -53,6 +52,7 @@ header {
 
                 @media @tablet {
                     width: 50%;
+                    justify-content: left;
                 }
                 
                 a {
@@ -90,6 +90,18 @@ section {
             line-height: 1.5rem;
         } 
         
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: left;
+        a {
+            padding-right: 5%;
+
+            i {
+                padding: 0 5px;
+            }
+        }
     }
     
 }
@@ -151,3 +163,7 @@ section {
 
 
 }
+
+
+
+
