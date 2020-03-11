@@ -233,6 +233,16 @@ section .body-text a {
   padding: 1% 0;
   line-height: 1.5rem;
 }
+section .social-media {
+  display: flex;
+  justify-content: left;
+}
+section .social-media a {
+  padding-right: 5%;
+}
+section .social-media a i {
+  padding: 0 5px;
+}
 .project-entry {
   display: flex;
   flex-direction: column;
